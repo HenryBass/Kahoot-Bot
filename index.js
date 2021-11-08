@@ -11,14 +11,6 @@ function verifyProperty(array, property) {
   return(finalNo)
 }
 
-client.on("QuizStart", () => {
-  console.log("The quiz has started!");
-});
-
-client.on("QuizEnd", () => {
-  console.log("The quiz has ended.");
-});
-
 client.on("QuestionStart", question => {
   console.log(question)
   setTimeout(function(){
